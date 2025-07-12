@@ -1,0 +1,65 @@
+/* global.css */
+
+/* Reset เบื้องต้น */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ตั้งค่าฟอนต์ */
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #ffe6f0; /* พื้นหลังชมพูอ่อน */
+  color: #b91c1c; /* สีแดงอมชมพู */
+}
+
+/* Animation ลอยหัวใจและเค้ก */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-floating-0 {
+  animation: float 6s ease-in-out infinite;
+}
+.animate-floating-1 {
+  animation: float 7s ease-in-out infinite;
+}
+.animate-floating-2 {
+  animation: float 5s ease-in-out infinite;
+}
+.animate-floating-3 {
+  animation: float 8s ease-in-out infinite;
+}
+.animate-floating-4 {
+  animation: float 6.5s ease-in-out infinite;
+}
+
+/* Styles อื่น ๆ ที่ใช้บ่อย */
+
+/* ปุ่ม */
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Input */
+input {
+  font-family: inherit;
+}
+
+/* ทำให้ container ครอบคลุมเต็มหน้าจอ */
+.min-h-screen {
+  min-height: 100vh;
+}
